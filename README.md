@@ -1,21 +1,60 @@
-Notes App (Django + React) 
+# Notes App 
 
-What it does
+Full-stack notes application with authentication.  
+Users can sign up, log in with JWT, and manage a simple list of notes.
 
-Register & login (JWT)
+---
 
-Create notes, list notes, delete notes
+## Features
 
-Stack
+- 🔐 User registration & login (JWT auth)
+- 📝 Create new notes
+- 📃 List all notes for the logged-in user
+- ❌ Delete notes
+- 🌐 REST API + React SPA frontend
 
-Backend: Python, Django, Django REST Framework, SimpleJWT
+---
 
-DB: SQLite (dev) / PostgreSQL (prod)
+## Tech Stack
 
-Frontend: React (Vite), Axios, HTML/CSS
+**Backend**
 
-Config
+- Python
+- Django
+- Django REST Framework (DRF)
+- SimpleJWT for JSON Web Tokens
+- SQLite (development)
+- PostgreSQL (production)
 
-Backend uses backend/.env (e.g. SECRET_KEY, DJANGO_DB, DB_*)
+**Frontend**
 
-Frontend uses frontend/.env (VITE_API_URL=http://127.0.0.1:8000)
+- React (Vite)
+- Axios for HTTP requests
+- HTML / CSS
+
+---
+
+# Backend Setup 
+
+From the project root:
+
+cd backend
+
+Run the dev server
+
+python manage.py 
+
+# Frontend Setup 
+
+Open a new terminal in the project root:
+
+cd frontend
+
+Install dependencies
+
+npm install
+
+Run the dev server
+
+npm run dev
+
